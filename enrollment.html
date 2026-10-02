@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment</title>
+</head>
+
+<body>
+    <nav align="right">
+            <a href="home.html">Home</a> |
+            <a href="courses.html">Courses</a> |
+            <a href="enrollment.html">Enrollment</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    <h1><i>Course Enrollment Form</i></h1>
+
+    <p>Please fill in the following details to enroll in our course.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend><strong>Personal Information</strong></legend>
+            <br>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" minlength="10" maxlength="10" placeholder="Enter 10 digit number" required>
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob"name="dob">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><strong>Gender</strong></legend> 
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <br>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>Course Information</strong></legend>
+
+            <br>
+
+            <label for="course">Select Course:</label>
+
+            <select id="course" name="course" required>
+
+                <option value="">-- Select a Course --</option>
+
+                <option value="java">
+                    Full Stack Java Development
+                </option>
+
+                <option value="python">
+                    Python Development
+                </option>
+
+                <option value="web">
+                    Web Development
+                </option>
+
+                <option value="data">
+                    Data Analytics
+                </option>
+
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>Skills</strong></legend>
+
+            <p>Select your skills:</p>
+
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+
+            <br>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+
+            <br>
+
+            <input type="checkbox" id="java" name="skills" value="Java">
+            <label for="java">Java</label>
+
+            <br>
+
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label>
+
+            <br>
+
+            <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <br>
+
+            <input type="checkbox" id="communication" name="skills" value="Communication">
+            <label for="communication">Communication</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>Learning Mode</strong></legend>
+
+            <input type="radio" id="online" name="mode" value="Online" required>
+            <label for="online">Online</label>
+
+            <br>
+
+            <input type="radio" id="offline" name="mode" value="Offline">
+            <label for="offline">Offline</label>
+
+            <br>
+
+            <input type="radio" id="hybrid" name="mode" value="Hybrid">
+            <label for="hybrid">Hybrid</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend><strong>Address</strong></legend>
+
+            <br>
+
+            <label for="address">Full Address:</label>
+
+            <br>
+
+            <textarea id="address" name="address" rows="5" cols="50" minlength="10" maxlength="200" placeholder="Enter your complete address" required></textarea>
+
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>
